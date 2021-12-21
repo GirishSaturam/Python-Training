@@ -1,0 +1,13 @@
+heads = 35
+
+legs = 94
+
+tatal_animals = heads
+
+chickens = (heads*2) - (legs/2)
+
+rabbits = total_animals - chickens
+
+print("Number of chickens are : ",chickens)
+
+print("Number of rabbits are : ",rabbits)
