@@ -1,0 +1,8 @@
+value = input("Enater the Value: ")
+
+n1= Value * 1
+n2= Value * 2
+n3= Value * 3
+
+Total = int(n1) + int(n2) + int(n3)
+print(Total)
