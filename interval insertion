@@ -1,0 +1,25 @@
+
+    def insert(self, intervals, newInterval):
+        res = []
+        if len(intervals) == 0:
+            res.append(newInterval)
+            return res
+            
+        intervals.append(newInterval)
+          
+        intervals.sort(key=lambda x:x.start)
+        
+        res.append(intervals[0])
+       
+        for i in xrange(1,len(intervals)):
+            cur = intervals[i]
+            pre = res[-1]
+           
+           
+            if cur.start <= pre.end:
+                res[-1].end = max(pre.end, cur.end) #merge
+            else:
+                res.append(cur) #insert
+                
+        return res
+        
