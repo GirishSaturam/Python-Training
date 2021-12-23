@@ -1,0 +1,13 @@
+import random
+
+def randomList(L,N):
+    list = random.sample(L, N)
+    list = sorted(list)
+    return  list
+
+
+if __name__ == '__main__':
+    L=[1,2,3,4,5]
+    N=3
+    sublist=randomList(L,N)
+    print("Sub List={0}".format(sublist))
